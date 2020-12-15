@@ -7,7 +7,7 @@ spring:
      config:
         server:
           git:
-            uri: https://github.com/huzhicheng/config-only-a-demo.git
+            uri: https://github.com/yangzongming/iyoukar-config-server.git
             search-paths: config
             default-label: master
             username: lao_yang_cool@126.com

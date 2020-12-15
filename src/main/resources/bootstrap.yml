@@ -2,7 +2,7 @@ server:
    port: 8092
 spring:
   application:
-    name: config-server
+    name: iyoukar-config-server
   cloud:
      config:
         server:

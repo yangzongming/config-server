@@ -1,0 +1,28 @@
+server:
+   port: 8092
+spring:
+  application:
+    name: config-server
+  cloud:
+     config:
+        server:
+          git:
+            uri: https://github.com/yangzongming/iyoukar-config-server.git
+            search-paths: iyoukar-config-server
+            default-label: master
+            username: lao_yang_cool@126.com
+            password: UWK182msh0Ia*^@
+
+eureka:
+  instance:
+    preferIpAddress: true
+    health-check-url-path: /actuator/health
+    metadata-map:
+      user.name: admin
+      user.password: admin
+    expiration-duration-in-seconds: 15
+    lease-renewal-interval-in-seconds: 5
+  client:
+     register-with-eureka: true
+     serviceUrl:
+        defaultZone: http://iyoukar.com:8501/eureka
